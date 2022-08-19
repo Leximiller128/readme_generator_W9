@@ -14,12 +14,33 @@ const questions = [
   {
     type: "input",
     name: "description",
-    message: "What is the description of your project?",
+    message: "Provide a short description of your project",
   },
   {
     type: "input",
     name: "installation",
-    message: "What are the installation instructions for this project?",
+    message: "What are the steps required to install this project?",
+  },
+  {
+    type: "input",
+    name: "table of contents",
+    message: "List your table of contents",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Which license do you want to use?",
+    choices: ["Mozilla", "Apache", "IBM", "MIT"],
+  },
+  {
+    type: "input",
+    name: "github username",
+    message: "Enter your Github Username",
+  },
+  {
+    type: "input",
+    name: "email address",
+    message: "Enter your email address",
   },
 ];
 
