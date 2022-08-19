@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+//packages needed for this application
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 const fs = require("fs");
 const path = require("path");
 
-// TODO: Create an array of questions for user input
+//array of questions for user input
 const questions = [
   {
     type: "input",
@@ -22,11 +22,6 @@ const questions = [
     message: "What are the steps required to install this project?",
   },
   {
-    type: "input",
-    name: "table of contents",
-    message: "List your table of contents",
-  },
-  {
     type: "list",
     name: "license",
     message: "Which license do you want to use?",
@@ -34,22 +29,37 @@ const questions = [
   },
   {
     type: "input",
-    name: "github username",
+    name: "usage",
+    message: "Write out the intended use of this application",
+  },
+  {
+    type: "input",
+    name: "contributing",
+    message: "List all contributors",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "Write out any tests you'd like to offer",
+  },
+  {
+    type: "input",
+    name: "githubUserName",
     message: "Enter your Github Username",
   },
   {
     type: "input",
-    name: "email address",
+    name: "email",
     message: "Enter your email address",
   },
 ];
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {
   return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
-// TODO: Create a function to initialize app
+// function to initialize app
 function init() {
   inquirer
     .prompt(questions)
