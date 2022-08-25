@@ -2,6 +2,8 @@
 
 ### Creates a README doc from the command line
 
+### Please watch this video before running app https://drive.google.com/file/d/1OmvBhCrUBKKW5hwCdX2Apvs4aRR3y7q_/view
+
 ## Table of Conents
 
 - Usage
@@ -24,5 +26,3 @@ Lexi Miller - JS, README
 ## Questions
 
 Please reach out to Lexi Miller at leximiller128@gmail.com or on GitHub @Leximiller128.
-
-![](https://github.com/Leximiller128/readme_generator_W9/blob/master/utils/Untitled_%20Aug%2022%2C%202022%202_11%20PM.gif)
